@@ -1,0 +1,136 @@
+* {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    margin-top: 20px;
+    background-color: #e8e8e8;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+a:hover {
+    color: red;
+}
+
+input, button {
+    margin: 5px auto;
+    border: none;
+    padding: 10px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+input[type=submit], button {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: yellow;
+}
+
+.delete {
+    display: inline-block;
+}
+
+label, .label {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+img {
+    width: 100%;
+}
+
+.main, nav {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+.card {
+    margin-bottom: 15px;
+    width: 30%;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #fff;
+}
+
+.cart, .product-card {
+    text-align: center;
+    width: 900px;
+    margin: auto;
+}
+
+.cart-title {
+    text-align: center;
+}
+
+.descr {
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 500px;
+}
+
+.cart {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cart img {
+    width: 100px;
+    align-self: center;
+}
+
+.cart-descr {
+    margin: 0 10px;
+    width: 80%;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+}
+
+.back {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
