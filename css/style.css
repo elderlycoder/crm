@@ -1,6 +1,6 @@
 * {
     font-family: 'Arial', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 body {
@@ -24,9 +24,9 @@ a:hover {
 }
 
 input, button {
-    margin: 5px auto;
+    margin: 1px auto;
     border: none;
-    padding: 10px;
+    padding: 1px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
@@ -133,4 +133,48 @@ nav ul {
     display: block;
     margin: 10px auto;
     text-align: center;
+}
+.grp-tools {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    top: -24px;
+    margin: 0 0 -24px;
+    padding-right: 5px;
+    height: 24px;
+    white-space: nowrap;
+}
+div.grp-tr {
+    display: table-row;
+}
+div.grp-tr-part {
+    display: table-row;
+}
+div.grp-th {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    margin-right: 0;
+    overflow: hidden;
+    padding: 1px 20px;
+    vertical-align: top;
+    white-space: nowrap;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #e0e0e0;
+}
+.goods__item-remove {
+    /*position: absolute;*/
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 22px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 100%;
+    background-color: #fff;
+    cursor: pointer
 }

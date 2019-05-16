@@ -1,5 +1,6 @@
 <?php
 require_once 'parts/header.php';
+
 if (isset($_GET['del'])) { // проверяем есть-ли в массиве GET запись с ключом 'del'
 	$del = $_GET['del'];  // записываем значение ключав переменную $del
 	$connect->query ( "DELETE FROM `contacts` WHERE id=$del"); //удаляем из БД запись созначением id равным del
@@ -20,11 +21,15 @@ $result = $connect->query("UPDATE `contacts` SET `title`='$title', `name`='$name
 ?>
 
     <div class="main">
+
         <div class="card">
-            Здесь будет список контактов
+           <a href="actions/addcontact.php">+ Добавить Контакт</a>
         </div>
-        <div class="card">
-           <a href="addcontact.php">+ Добавить Контакт</a>
+        <div>
+            <form name="search" method="post" action="/actions/search.php">
+                <input type="search" name="query" placeholder="Поиск">
+                <button type="submit">Найти</button>
+            </form>
         </div>
 
         <table cellpadding="5" cellspacing="0" border="1" width="100%">

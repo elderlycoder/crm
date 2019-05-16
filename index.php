@@ -1,6 +1,9 @@
 <?php
+// подключение нужных файлов
+
 require_once 'parts/header.php';
 
+echo __DIR__;
 
 ?>
 
